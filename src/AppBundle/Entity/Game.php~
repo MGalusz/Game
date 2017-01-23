@@ -1,0 +1,55 @@
+<?php
+
+namespace AppBundle\Entity;
+
+/**
+ * Game
+ */
+class Game
+{
+    /**
+     * @var int
+     */
+    private $id;
+
+    /**
+     * @var int
+     */
+    private $money;
+
+
+    /**
+     * Get id
+     *
+     * @return int
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set money
+     *
+     * @param integer $money
+     *
+     * @return Game
+     */
+    public function setMoney($money)
+    {
+        $this->money = $money;
+
+        return $this;
+    }
+
+    /**
+     * Get money
+     *
+     * @return int
+     */
+    public function getMoney()
+    {
+        return $this->money;
+    }
+}
+
